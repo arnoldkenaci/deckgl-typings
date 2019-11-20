@@ -2,7 +2,7 @@
 declare module '@deck.gl/aggregation-layers/utils/color-utils' {
 	export const defaultColorRange: number[][];
 	export function colorRangeToFlatArray(colorRange: any, normalize?: boolean, ArrayType?: Float32ArrayConstructor): any;
-    export type RGBAColor = [number, number, number, number?];
+    export type RGBAColor = number[];
     export type ColorDomain = [number, number];
     export type ColorRange = [RGBAColor, RGBAColor, RGBAColor, RGBAColor, RGBAColor, RGBAColor]
 }
